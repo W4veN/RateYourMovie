@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/first_activity_background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/movieImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="6"
+        app:srcCompat="@drawable/iconfinder_filmreel_1055062" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp" >
+
+        <TextView
+            android:id="@+id/check_my_movie_text"
+            android:layout_width="386dp"
+            android:layout_height="118dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="-5dp"
+            android:fontFamily="casual"
+            android:text="Check my movie App!"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/click_here_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="147dp"
+            android:layout_marginRight="28dp"
+            android:onClick="goToAppMethod"
+            android:text="Click Here!"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>
